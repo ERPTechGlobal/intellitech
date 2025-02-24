@@ -1,5 +1,5 @@
 app_name = "intellitech"
-app_title = "CheckInPro"
+app_title = "Intellitech"
 app_publisher = "Fariz Khanzada"
 app_description = "Smart Attendance Machine Integration with ERP"
 app_email = "khanzadafariz@gmail.com"
@@ -15,7 +15,7 @@ app_license = "mit"
 # 	{
 # 		"name": "intellitech",
 # 		"logo": "/assets/intellitech/logo.png",
-# 		"title": "CheckInPro",
+# 		"title": "Intellitech",
 # 		"route": "/intellitech",
 # 		"has_permission": "intellitech.api.permission.has_app_permission"
 # 	}

@@ -1,4 +1,4 @@
-## CheckInPro
+## Intellitech
 
 Smart Attendance Machine Integration with ERP
 
