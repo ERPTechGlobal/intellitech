@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-25 16:52:11.457678",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_90hl",
+  "api",
+  "host_ip",
+  "last_sync",
+  "column_break_fzks",
+  "start_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_90hl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "api",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Api",
+   "reqd": 1
+  },
+  {
+   "fieldname": "host_ip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Host IP",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fzks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-02-28 17:05:36.049692",
+ "modified_by": "Administrator",
+ "module": "Intellitech",
+ "name": "Intellitech Device Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -148,23 +148,35 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
+scheduler_events = {
+	# "all": [
+	# 	"intellitech.tasks.all"
+	# ],
+	# "daily": [
+	# 	"intellitech.tasks.daily"
+	# ],
+	"hourly": [
+		  "intellitech.intellitech.api.checksync.process_checkins"
+	],
+	# "weekly": [
+	# 	"intellitech.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"intellitech.tasks.monthly"
+	# ],
+}
+
+
 # scheduler_events = {
-# 	"all": [
-# 		"intellitech.tasks.all"
-# 	],
-# 	"daily": [
-# 		"intellitech.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"intellitech.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"intellitech.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"intellitech.tasks.monthly"
-# 	],
+#     "cron": {
+#         "*/10 * * * *": [  # Runs every 10 minutes
+#             "intellitech.intellitech.api.checksync.process_checkins"
+#         ]
+#     }
 # }
+
+
+
 
 # Testing
 # -------
