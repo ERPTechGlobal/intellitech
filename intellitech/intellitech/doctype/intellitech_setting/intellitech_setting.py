@@ -3,8 +3,7 @@
 
 # import frappe
 from frappe.model.document import Document
-from intellitech.intellitech.api.checksync import process_checkins
 
-class IntellitechDeviceSettings(Document):
+
+class IntellitechSetting(Document):
 	pass
-   

@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestIntellitechDeviceSettings(FrappeTestCase):
+class TestIntellitechSetting(FrappeTestCase):
 	pass

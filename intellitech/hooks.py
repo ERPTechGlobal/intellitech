@@ -145,6 +145,7 @@ app_license = "mit"
 # 	}
 # }
 
+
 # Scheduled Tasks
 # ---------------
 
@@ -156,7 +157,7 @@ scheduler_events = {
 	# 	"intellitech.tasks.daily"
 	# ],
 	"hourly": [
-		  "intellitech.intellitech.api.checksync.process_checkins"
+		  "intellitech.intellitech.api.checksync1.process_checkins"
 	],
 	# "weekly": [
 	# 	"intellitech.tasks.weekly"
@@ -253,4 +254,3 @@ scheduler_events = {
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
