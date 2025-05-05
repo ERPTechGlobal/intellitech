@@ -134,11 +134,18 @@ def process_checkins(doc=None, method=None):
 
             except Exception as e:
                 print(f"Error processing check-in: {str(e)}")
+        latest_checkin_time = frappe.db.sql("""
+            SELECT MAX(ec.time)
+            FROM `tabEmployee Checkin` ec
+            JOIN `tabEmployee` e ON ec.employee = e.name
+            WHERE e.company = %s
+        """, settings_doc.company)[0][0]
 
+        if latest_checkin_time:
+            settings_doc.last_sync_of_employee_check_in = latest_checkin_time
+            print(f"Set last_sync_of_employee_check_in to: {latest_checkin_time}")
         settings_doc.start_date = end_date
         settings_doc.last_sync = now()
-        if has_checkins_for_setting:
-            settings_doc.last_sync_of_employee_check_in = now()
         settings_doc.save()
         print(f"Updated Intellitech start_date for {settings_doc.name} to: {end_date}")
 
