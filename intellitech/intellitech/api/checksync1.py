@@ -102,7 +102,7 @@ def process_checkins(doc=None, method=None):
                 event_datetime = get_datetime(log_time).replace(tzinfo=None)
 
                 emp_list = frappe.get_list("Employee", 
-                    filters={"attendance_device_id": enroll_id, "company": settings_doc.company},
+                    filters={"custom_attendance_device_idbiometric": enroll_id, "company": settings_doc.company},
                     fields=["name", "default_shift"]
                 )
                 
@@ -161,5 +161,3 @@ def process_checkins(doc=None, method=None):
             print(f"Error updating Shift Type {shift_name}: {str(e)}")
 
     print("Check-in processing complete.")
-
-

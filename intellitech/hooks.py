@@ -167,7 +167,16 @@ scheduler_events = {
 	# ],
 }
 
-
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", [
+                "Employee-custom_attendance_device_idbiometric"
+            ]]
+        ]
+    }
+]
 # scheduler_events = {
 #     "cron": {
 #         "*/10 * * * *": [  # Runs every 10 minutes
